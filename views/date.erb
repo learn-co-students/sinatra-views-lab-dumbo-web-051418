@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Today</h1>
+    <%now = Time.new %>
+    <%today = DateTime.new(now.year, now.month, now.day, now.hour, now.min, now.sec, "-04:00")%>
+    <%today = today.strftime("The date is %A, %B %d, %Y")%>
+    <p> <%= today %> </p>
+  </body>
+</html>
